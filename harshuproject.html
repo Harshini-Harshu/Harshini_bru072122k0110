@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harshini resume page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color:gray;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color:#f0f0f0;
+        }
+
+        .section-content {
+            background-color:pink;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(1, 1, 1, 1.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color:blue;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color:gray;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="./harshuprojectpic.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>HARSHINI G</h1>
+            <p>Final year B.Sc CS Student</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Personal skills">Personal skills</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>As a final year BSc Computer Science student, I am passionate about technology and its applications. Throughout my academic journey, I have honed my problem-solving skills and developed a deep understanding of computer science concepts. I am driven by a desire to continually learn and adapt to the ever-evolving tech landscape. With a strong foundation in programming, data structures, and algorithms, I am eager to embark on a career that challenges me and allows me to make a meaningful impact in the world of technology. I am a proactive and collaborative team player, and I'm excited to contribute my skills and knowledge to innovative projects and grow as a professional in the field.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <h3> Bachelor of science(Computer science)</h3>
+            <p>Bharathiar University</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Problem Solving in C</li>
+                <li>Wed development</li>
+                <li>Internet Of Things</li>
+                <li>OOP concept</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Personal skills">
+        <div class="section-content">
+            <h2>Personal Skills</h2>
+            <ul>
+                <li>Communication Skill</li>
+                <li>Time Management</li>
+                <li>Leadership</li>
+                <li>Adaptability</li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+            
+
+    <footer>
+        <p>&copy; 2023 HARSHINI G</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
